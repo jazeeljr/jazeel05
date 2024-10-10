@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">MY PORTFOLIO</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#experience">Experience</a></li>
+          
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mohammed Jazeel</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#achievemnts" onclick="toggleMenu()">Achievements</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="assets/jazeeeel.jpeg" alt="" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mohammed Jazeel</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <img src="assets/jazeeeel.jpeg" alt="">
+        
+        <div class="about-details-container">
+          
+          <div class="text-container">
+            <p style="color: black;">
+             My name is T Mohammed Jazeel. I hail from Talapady. i completed my high school at ST. Joseph's Joyland school at kolya
+             someshwara. i studied puc at ST.Aloysius College Mangalore. I am currently persuing B.E in Computer Science and Engineering
+            at PA College Of Engineering.my family member consists of 6 members. i have 3 siblings.i like to play football and basketball
+            during my free hours.  
+
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <section id="achievements">
+        <h1 class="title">My Achievements</h1>
+        <div class="achievements-container">
+          <div class="achievement-box">
+            <img src="assets/achievement1.jpeg" alt="Achievement 1" class="achievement1-img" />
+            <div class="achievementtext-box">
+              <p>Won a bronze medal at the Dasara district Taekwondo tournament on 28-09-2024.</p>
+            </div>
+          </div>
+          <div class="achievement-box">
+            <img src="assets/achievement2.jpeg" alt="Achievement 2" class="achievement2-img" />
+            <div class="achievementtext-box">
+              <p>Won a bronze medal at state VTU level Taekwondo competition.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Frontend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/html-logo.jpg" alt="HTML logo" class="icon" />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/css-logo.png" alt="CSS logo" class="icon" />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/js-logo.png" alt="JavaScript logo" class="icon" />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-container">
+          <div class="project-card">
+            <div class="image-container">
+              <img src="./assets/p1.webp" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="project-title">Project One</h2>
+            
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+              
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+               
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!-- Repeat for more projects -->
+        </div>
+      </section>
+      
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:mohammedjazeel@gmail.com">mohammedjazeel73@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/mohammed-jazeel-a73028297" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+    </footer>
+    <script src="script.js"></script>
+  <!-- Code injected by live-server -->
+<script>
+
+</script>
+</body>
+</html>
