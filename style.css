@@ -319,9 +319,18 @@ section {
   text-align: center;
 }
 
+.text-container {
+  line-height: 2.3rem; /* Adjust the value for more or less space */
+  margin-bottom: 1rem; /* Adds space between paragraphs */
+  font-size: 1.3rem;
+}
+
+
 .section-container {
   gap: 4rem;
-  height: 80%;
+  height: 60%;
+  border: 3.4px solid black ;
+  
 }
 
 .section__pic-container {
@@ -329,6 +338,7 @@ section {
   width: 400px;
   margin: auto 0;
 }
+
 
 /* ACHIEVEMENTS SECTION */
 #achievements {
@@ -430,7 +440,7 @@ section {
   border: 3.5px solid black;
   text-align: center;
   margin-bottom: 6rem;
-
+}
 .experience-details-container {
   display: flex;
   justify-content: center;
@@ -492,7 +502,7 @@ article p {
 
 #projects {
   position: relative;
-  margin-top: 2rem; /* Decreased margin to bring closer to the experience section */
+  margin-bottom: 4rem; /* Decreased margin to bring closer to the experience section */
 }
 
 .section__text__p1 {
@@ -500,7 +510,7 @@ article p {
 }
 
 .about-containers {
-  margin-top: 1.5rem; /* Brings the containers closer to the "Projects" title */
+  margin-top: 4rem; /* Brings the containers closer to the "Projects" title */
 }
 
 .project-img {
@@ -543,30 +553,30 @@ article p {
 }
 
 .contact-info-upper-container {
-  display: flex; /* Change to flex for row-wise layout */
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem; /* Space between boxes */
+  gap: 2rem;
   margin: 2rem auto;
 }
 
 .contact-info-box {
   background-color: #ffffff; /* White background */
   border-radius: 1rem;
-  border: 2px solid black; /* Black border */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  padding: 1.5rem;
+  padding: 2.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
   max-width: 300px;
-  width: 100%; /* Full width of the container */
+  width: 100%;
 }
 
 .contact-info-container {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  
 }
 
 .contact-info-container p {
@@ -590,15 +600,4 @@ article p {
 
 .contact-info-container a:hover {
   text-decoration: underline; /* Add underline on hover */
-}
-
-/* FOOTER SECTION */
-
-footer {
-  height: 26vh;
-  margin: 0 1rem;
-}
-
-footer p {
-  text-align: center;
 }
