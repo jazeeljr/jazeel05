@@ -399,6 +399,10 @@ section {
   text-align: center;
 }
 
+.about-containers{
+  margin-top: 9rem;
+}
+
 .experience-sub-title {
   color: #191616;
   font-weight: 600;
