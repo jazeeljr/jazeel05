@@ -356,6 +356,7 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   transition: transform 0.3s ease;
+  border: 3.5px solid black;
 }
 
 .achievement-box:hover {
@@ -384,6 +385,7 @@ section {
   font-size: 1rem;
   font-weight: 500;
   margin: 0;
+  border-color: #0e0d0d;
 }
 
 @media (max-width: 768px) {
@@ -397,10 +399,19 @@ section {
 #experience {
   padding: 2rem 0;
   text-align: center;
+  margin-top: 6rem; /* Added margin to create space between achievements and experience section */
 }
 
-.about-containers{
-  margin-top: 9rem;
+.about-containers {
+  margin-top: 6rem; /* Increase space between "Explore My" text and the Experience section */
+}
+
+.section__text__p1 {
+  margin-bottom: 0.3rem; /* Create more space between the text and the "Experience" section */
+}
+
+.title {
+  margin-bottom: 2rem;
 }
 
 .experience-sub-title {
@@ -409,6 +420,16 @@ section {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border: 3.5px solid black;
+  text-align: center;
+  margin-bottom: 6rem;
 
 .experience-details-container {
   display: flex;
@@ -430,8 +451,8 @@ article {
   justify-content: space-between;
   gap: 0.5rem;
   padding: 0.75rem;
-  background-color: #f9f9f9;
-  border: 1px solid #e0e0e0;
+  background-color: white;
+  border: 1px solid white;
   border-radius: 6px;
   transition: transform 0.2s ease;
 }
@@ -459,74 +480,43 @@ article p {
 
 
 
+
 /* PROJECTS SECTION */
 
+
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
 #projects {
-  padding: 3rem 0;
-  background-color: #f4f4f9;
+  position: relative;
+  margin-top: 2rem; /* Decreased margin to bring closer to the experience section */
 }
 
-.projects-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 2rem;
+.section__text__p1 {
+  margin-top: 2rem; /* Adjusts the space above the text "Browse My Recent" */
 }
 
-.project-card {
-  background: white;
-  box-shadow: 0 4px 8px rgba(3, 3, 3, 0.1);
-  border-radius: 10px;
-  max-width: 350px;
-  padding: 1.5rem;
-  text-align: center;
-  transition: transform 0.3s ease-in-out;
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-}
-
-.image-container {
-  margin-bottom: 1rem;
+.about-containers {
+  margin-top: 1.5rem; /* Brings the containers closer to the "Projects" title */
 }
 
 .project-img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
 }
 
 .project-title {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-.project-description {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 1.5rem;
-}
-
-.btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+  margin: 1rem;
+  color: black;
 }
 
 .project-btn {
-  padding: 0.75rem 1.5rem;
-  border: none;
-  background-color: #45474a;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.project-btn:hover {
-  background-color: #e88787;
+  color: black;
+  border-color: rgb(163, 163, 163);
 }
 
 
@@ -537,35 +527,51 @@ article p {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  padding: 2rem 0;
 }
 
-title {
+.section__text__p1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.title {
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
 }
 
 .contact-info-upper-container {
-  display: flex;
+  display: flex; /* Change to flex for row-wise layout */
   justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
+  align-items: center;
+  gap: 2rem; /* Space between boxes */
   margin: 2rem auto;
-  padding: 0.5rem;
+}
+
+.contact-info-box {
+  background-color: #ffffff; /* White background */
+  border-radius: 1rem;
+  border: 2px solid black; /* Black border */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+  width: 100%; /* Full width of the container */
 }
 
 .contact-info-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
+  gap: 0.75rem;
 }
 
 .contact-info-container p {
   font-size: larger;
+  margin: 0;
 }
 
 .contact-icon {
@@ -574,6 +580,16 @@ title {
 
 .email-icon {
   height: 2.5rem;
+}
+
+.contact-info-container a {
+  text-decoration: none;
+  color: #333; /* Darker color for text */
+  font-weight: 500;
+}
+
+.contact-info-container a:hover {
+  text-decoration: underline; /* Add underline on hover */
 }
 
 /* FOOTER SECTION */
